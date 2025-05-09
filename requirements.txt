@@ -6,3 +6,4 @@ opencv-python-headless
 numpy
 mysql-connector-python
 jinja2
+python-multipart
