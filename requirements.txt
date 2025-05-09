@@ -1,0 +1,8 @@
+fastapi
+uvicorn[standard]
+tensorflow
+pillow
+opencv-python-headless
+numpy
+mysql-connector-python
+jinja2

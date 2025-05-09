@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Detector de Números</title>
+  <link rel="stylesheet" href="/static/css/estilos.css">
+</head>
+<body>
+  <div class="container">
+    <h1>🔢 Detector de Números Marlon Hernández</h1>
+
+    <label for="imagen">Selecciona una imagen:</label>
+    <input type="file" id="imagen" accept="image/*"><br>
+
+    <button onclick="abrirCamara()">📷 Usar Cámara</button>
+    <button onclick="capturarFoto()" id="btnCapturar" style="display:none;">📸 Capturar Foto</button>
+    <br><br>
+
+    <video id="video" width="220" autoplay style="display:none; border-radius:10px;"></video>
+    <canvas id="canvas" style="display:none;"></canvas>
+    <img id="preview" src="#" alt="Vista previa"><br>
+
+    <button onclick="enviarImagen()">📤 Procesar Imagen</button>
+
+    <div class="resultado" id="resultado">
+      <h3>📊 Resultado</h3>
+      <p><strong>Número:</strong> <span id="num"></span></p>
+      <p><strong>En palabras:</strong> <span id="palabras"></span></p>
+      <p><strong>Factorial:</strong> <span id="factorial"></span></p>
+      <p id="mensaje-db" style="display:none; font-weight:bold; margin-top:10px;"></p>
+    </div>
+  </div>
+
+  <script src="/static/js/app.js"></script>
+</body>
+</html>
